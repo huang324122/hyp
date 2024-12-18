@@ -1,0 +1,21 @@
+section img{
+	display: block;
+	transition:all 0.3s;
+	cursor: pointer;
+}
+
+.cont{
+	padding-left: 5rem;
+	padding-right: 4rem;
+}
+section .title{
+	margin: 5rem 0;
+}
+
+section .title h1{
+	font-weight:bold;
+}
+
+section img:hover{
+	transform: scale(1.1);
+}

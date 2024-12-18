@@ -1,0 +1,110 @@
+section{
+	margin:3rem auto;
+	width:70.5625rem;
+	position: relative;
+}
+
+section table{
+	margin: 0 5rem 0 6rem;
+}
+
+section td{
+	text-align: center;
+	padding: 1rem 1rem;
+}
+
+section .title{
+	margin-top:0rem;
+	text-align: center;
+}
+
+section .bg-top{
+	background: url(../img/handbook/bg_border_top.png);
+	height: 3.6875rem;
+	width:70.5625rem;
+}
+
+section .bg-left{
+	float: left;
+	width: 70.625rem;
+	background:#fbf2dc url(../img/handbook/bg_border_left.png) repeat-y;
+}
+
+section .bg-right{
+	float: left;
+	background: url(../img/handbook/bg_border_right.png) right repeat-y; 
+	width: 70.55rem;
+}
+
+section .bg-bottom{
+	float: left;
+	background: url(../img/handbook/bg_border_foot.png);
+	height: 3.6875rem;
+	width:70.5625rem;
+}
+.bookmarks,.bookmarks-w{
+	position: fixed;
+	margin-left: -12rem;
+	z-index: -1;
+	transition: all 0.3s;
+}
+.bookmark,.bookmark-w{
+	background: url(../img/bookmark.png) no-repeat;
+	padding: 0.55rem 4rem;
+	padding-left: 5.5rem; 
+	font-size:1.5rem ;
+	z-index: -1;
+	color: #000000;
+	transition: all 0.3s;
+}
+.bookmark:hover{
+	background-position-x: -2.5rem; 
+	padding-left: 3rem; 
+}
+
+.bookmarks-w{
+	margin-left: -17rem;
+}
+.bookmark-w:hover{
+	background-position-x: -2.5rem; 
+	padding-left: 0.4rem; 
+}
+
+footer{
+	float: left;
+	width:100%;
+}
+
+.footer-left,.footer-rigt{
+	margin: 0 auto;
+}
+.footer-left{
+	margin-right: 0;
+}
+.footer-rigt{
+	margin-left: 0;
+}
+
+/*生物图鉴*/
+.Biologys{
+	margin: 0 5rem 0 6rem;
+}
+
+.Biologys a{
+	color: black;
+}
+
+.Biologys strong{
+	font-size: 30px;
+}
+
+.Biologys p, .Biologys hr{
+	margin-bottom: 0rem;
+}
+.Biologys hr{
+	margin:  0 0;
+	border-top: 2px solid rgba(0,0,0,.1);
+}
+.Biologys img{
+	cursor: pointer;
+}

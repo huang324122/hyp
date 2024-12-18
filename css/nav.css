@@ -1,0 +1,170 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+nav {
+	background: rgba(80, 87, 168,0.7);
+	height: 5rem;
+	width: 100%;
+	position: absolute;
+	z-index:1;
+}
+
+nav .logo {
+		float: left;
+		background: url(../img/logo.png) no-repeat 0 0;
+		width: 17rem;
+		height: 7rem;
+		overflow: hidden;
+		margin: 10px 50px 0 45px;
+		position: absolute;
+}
+
+nav ul{
+	margin-left: 20rem;
+	display: flex;
+	float: left;
+}
+nav ul li a{
+	transition: all 0.25s;
+}
+
+nav ul li a:hover{
+	color: #FFCB57;
+	background: rgba(40, 47, 88,1);
+}
+
+nav a{
+	display: table-cell;
+	text-align: center;
+	height: 5rem;
+	width: 10rem;
+	font-size: 1.5rem;
+	vertical-align:middle
+}
+
+nav ul li ul{
+	margin: 0 auto;
+	display:block;
+	color: rgba(0,0,0,0);
+	position: absolute;
+	transition: all 0.3s linear;
+	overflow: hidden;
+	height: 0px; 
+	z-index: 3;
+}
+
+nav ul li ul li{
+	background: rgba(40, 47, 88, 0.5);
+}
+
+nav .right {
+	position: absolute;
+	right: 0;
+	width: 22.5rem;
+	height: 5rem;
+}
+
+nav .right a{
+	width: 12rem;
+}
+
+nav .button,nav .button2{
+	position: relative;
+	display: table-cell;
+	height: 5rem;
+	width: 12rem;
+	background-color: #38acff;
+	margin: 0;
+}
+
+nav .button2{
+	background-color: #ffcb57;
+}
+
+nav .button:hover{
+	background-color: #44c9ff;
+}
+
+nav .button2:hover{
+	background-color: #ffe369;
+}
+
+nav a:hover{
+	color: #FFFFFF;
+}
+
+nav .right .logo {
+	margin: 0;
+	position: absolute;
+	left: 1.875rem;
+	top: 1.875rem;
+	width: 1.5rem;
+	height: 1.375rem;
+	background: url(../img/bannerLogos.png);
+	background-position: -98px 0px;
+}
+
+nav h4{
+	margin-left: 1.875rem;
+}
+
+header .banner{
+	background: url(../img/news/banner.jpg) no-repeat;
+	height: 21.25rem;
+	width: 100%;
+	background-size: 100% 100%;
+	min-width: 70rem;
+}
+
+footer{
+	padding: 1.25rem;
+	display: flex;
+	background-color: rgba(220,220,220,0.5);
+}
+
+footer p,.footer-rigt a,.footer-rigt{
+	padding: 0.09375rem;
+	font-size: 0.75rem;
+	margin: 0 auto;
+}
+
+.footer-left{
+	margin-right: 2rem;
+}
+
+.footer-left a{
+	display: block;
+	background: url(../img/logos.png) no-repeat;
+	height: 6.25rem;
+	width: 13.5rem;
+	background-position: 0 -130px;
+}
+
+.footer-rigt{
+	margin-left: 0px;
+	width: 45rem;
+}
+
+.footer-rigt a{
+	color: #000000;
+}
+.footer-rigt ul{
+	display: flex;
+	float: left;
+	margin: 0 auto;
+}
+.footer-rigt li{
+	margin:0 0.0625rem;
+}

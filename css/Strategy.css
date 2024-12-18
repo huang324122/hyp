@@ -1,0 +1,60 @@
+.content{
+	width: 80rem;
+}
+.content ul{
+	/* display: flex; */
+	column-count:4;
+	column-gap:1em;
+}
+.content ul li{
+	margin: 1rem 1rem;
+	width: 18rem;
+	max-height: 40rem;
+	overflow: hidden;
+	background: #F2E9EC;
+	box-shadow: 5px 5px 5px #888888;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.content ul li:hover{
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.content ul li p{
+	border-top: 1px solid gainsboro;
+ 	text-align: start;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 15;
+	overflow: hidden; 
+}
+section{
+	margin-bottom: 5rem;
+}
+
+
+section a{
+	color: #000000;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	transition: all 0.3s;
+}
+
+section .page{
+	display: flex;
+	width: 30rem;
+}
+section .page a{
+	border: 1px solid royalblue;
+	display: block;
+	padding: 0 1.2rem;
+	vertical-align: middle;
+}
+
+section .page a:hover{
+	color: #FFFFFF;
+	background: #5273d7;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的世界-资料站-首页</title>
+		<script src="js/jq.js"></script>
+		
+		<script src="bootstrap-4.3.1/dist/js/bootstrap.js"></script>
+		<script src="bootstrap-4.3.1/dist/js/bootstrap.bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/handbook.css" />
+		<style>
+			section a{
+				font-size: 1.2rem;
+			}
+			
+			.bt input{
+				border-radius:0.25rem;
+				background: #38acff;
+				box-shadow:none;
+				border: 0px;
+				padding: 0.3rem 0.5rem;
+				margin:  0 1rem;
+				color: white;
+				font-size: 1.2rem;
+				transition: 0.1s;
+			}
+			.bt input:hover{
+				background: #ffcb57;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="fixed-top">
+			<div class="logo"><img src="img/logo.png" /></div>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="news.html">新闻咨询</a>
+				<ul>
+					<li><a href="news.html">最 新</a></li>
+					<li><a href="news.html?type=hot">热 点</a></li>
+					<li><a href="news.html?type=note">公 告</a></li>
+					<li><a href="news.html?type=active">活 动</a></li>
+				</ul>
+				</li>
+				<li><a href="goodsHandbook.html">游戏图鉴</a>
+				<ul>
+					<li><a href="goodsHandbook.html">物品图鉴</a></li>
+					<li><a href="battleHandbook.html">武器图鉴</a></li>
+					<li><a href="lifeHandbook.html">生物图鉴</a></li>
+				</ul>
+				</li>
+				<li><a href="worldInfo.html">地图介绍</a>
+				<ul>
+					<li><a href="worldInfo.html">生存世界</a></li>
+					<li><a href="worldInfo-e.html">下界世界</a></li>
+					<li><a href="worldInfo-e.html">末地世界</a></li>
+				</ul>
+				</li>
+				<li><a href="Strategy.html">游戏攻略</a>
+				</li>
+			</ul>
+			<div class="right">
+				<div class="button">
+					<a href="login.html">
+						<div class="logo" style="left: 18px;"></div>
+						<h4>账号登录</h4>
+					</a>
+				</div>
+				<div class="button2">
+					<a href="">
+						<div class="logo" style="background-position-y: -26px;"></div>
+						<h4>下载游戏</h4>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div class="banner"></div>
+		</header>
+
+		<section>
+			<div class="title" style="text-align: center;margin: 3rem 0;">
+				<h1>账号登录</h1>
+				<p>Login</p>
+			</div>
+			<form id="form" style="text-align: center;">
+				
+				<ul>
+					<li><a>账户: &nbsp;</a><input type="text" name="name"></li>
+					<br>
+					<li><a>密码: &nbsp;</a><input type="text" name="name"></li>
+					<br>
+					<li class="bt" style="text-align: center;">
+						<input type="submit" value="登录">
+						<input type="reset" value="注册">
+					</li>
+				</ul>
+			</form>
+		</section>
+
+		<footer style="bottom: 0;display: flex;position: absolute;">
+			<div class="footer-left">
+				<a href=""></a>
+			</div>
+			<div class="footer-rigt">
+				<p>
+					<ul>
+						<li><a href="">腾讯娱乐</a></li>|
+						<li><a href="">服务条款</a></li>|
+						<li><a href="">腾讯游戏隐私保护指引</a></li>|
+						<li><a href="">腾讯游戏招聘</a></li>|
+						<li><a href="">腾讯游戏客服</a></li>|
+						<li><a href="">腾讯游戏地图</a></li>|
+						<li><a href="">商务合作</a></li>|
+						<li><a href="">腾讯网</a></li>|
+						<li><a href="">网站导航</a></li>
+					</ul>
+				</p><br>
+				<p>腾讯公司版权所有</p>
+				<p>COPYRIGHT © 1998 - 2019 TENCENT. ALL RIGHTS RESERVED.</p>
+				<p>粤网文[2017]6138-1456号 |（总）网出证（粤）字第057号</p>
+				<p>文网游进字[2016]0083号 | 新广出审[2016]783号 | 出版物号：ISBN 978-7-89988-706-6 | 全国文化市场统一举报电话：12318</p>
+			</div>
+		</footer>
+	</body>
+
+	<script>
+		//nav
+		var len;
+		$("nav>ul>li").hover(function() {
+			len=$(this).children("ul").children("li").length;
+			if(len==0){return}
+			$(this).children("ul").css("transition","all "+len*0.15+"s")
+			$(this).children("ul").css("height", ($(this).children("ul").children("li").length * 5) + "rem");
+			$("#cont").css("transition","all "+len*0.15+"s")
+			$("#cont").css("padding-top", (len * 5) + "rem");
+		}, function() {
+			$(this).children("ul").css("height", "0px");
+			$("#cont").css("padding-top", "0rem");
+		})
+	</script>
+</html>

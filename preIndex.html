@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的世界-资料站</title>
+		<script src="js/jq.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/preIndex.css" />
+
+
+	</head>
+	<body>
+		<nav>
+			<div class="logo"><img src="img/logo.png" /></div>
+			<ul>
+				<li><a href="news.html">新闻资讯</a>
+				<ul>
+					<li><a href="news.html?type=note">公 告</a></li>
+					<li><a href="news.html?type=active">活 动</a></li>
+				</ul>
+				</li>
+				<li><a href="lifeHandbook.html">新手指南</a>
+				<ul>
+					<li><a href="worldInfo.html">主世界介绍</a></li>
+					<li><a href="goodsHandbook.html">生存图鉴</a></li>
+					<li><a href="Strategy.html">图文攻略</a></li>
+				</ul>
+				</li>
+				<li><a href="www.baidu.com">壁纸视频</a>
+				<ul>
+					<li><a href="www.baidu.com">游戏壁纸</a></li>
+					<li><a href="www.baidu.com">精彩视频</a></li>
+				</ul>
+				</li>
+				<li><a href="">精美周边</a>
+				<ul>
+					<li><a href="www.tianmao.com">天猫</a></li>
+					<li><a href="jd.com">京东</a></li>
+					<li><a href="www.pinduoduo.com">拼多多</a></li>
+				</ul>
+				</li>
+			</ul>
+			<div class="right">
+				<div class="button">
+					<a href="index.html">
+						<div class="logo" style="left: 18px;"></div>
+						<h4>进入资料站</h4>
+					</a>
+				</div>
+				<div class="button2">
+					<a href="">
+						<div class="logo" style="background-position-y: -26px;"></div>
+						<h4>下载游戏</h4>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<section>
+			<div id="cont" class="title">
+				<img src="img/PerIndex/PerIndexTitle.png">
+				<div class="dowload">
+					<h1>全新村庄版本重磅来袭</h1>
+					<a href="">了解详情</a>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="footer-left">
+				<a href=""></a>
+			</div>
+			<div class="footer-rigt">
+				<p>
+					<ul>
+						<li><a href="">腾讯娱乐</a></li>|
+						<li><a href="">服务条款</a></li>|
+						<li><a href="">腾讯游戏隐私保护指引</a></li>|
+						<li><a href="">腾讯游戏招聘</a></li>|
+						<li><a href="">腾讯游戏客服</a></li>|
+						<li><a href="">腾讯游戏地图</a></li>|
+						<li><a href="">商务合作</a></li>|
+						<li><a href="">腾讯网</a></li>|
+						<li><a href="">网站导航</a></li>
+					</ul>
+				</p><br>
+				<p>腾讯公司版权所有</p>
+				<p>COPYRIGHT © 1998 - 2019 TENCENT. ALL RIGHTS RESERVED.</p>
+				<p>粤网文[2017]6138-1456号 |（总）网出证（粤）字第057号</p>
+				<p>文网游进字[2016]0083号 | 新广出审[2016]783号 | 出版物号：ISBN 978-7-89988-706-6 | 全国文化市场统一举报电话：12318</p>
+			</div>
+		</footer>
+	</body>
+
+	<script>
+		//nav
+		var len;
+		$("nav>ul>li").hover(function() {
+			len=$(this).children("ul").children("li").length;
+			if(len==0){return}
+			$(this).children("ul").css("transition","all "+len*0.15+"s")
+			$(this).children("ul").css("height", ($(this).children("ul").children("li").length * 5) + "rem");
+			$("#cont").css("transition","all "+len*0.15+"s")
+			$("#cont").css("padding-top", (len * 5) + "rem");
+		}, function() {
+			$(this).children("ul").css("height", "0px");
+			$("#cont").css("padding-top", "0rem");
+		})
+		
+	</script>
+</html>

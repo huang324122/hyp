@@ -1,0 +1,38 @@
+section {
+	background: url(../img/preIndexBG1.jpg) no-repeat;
+	text-align: center;
+	height: 53.75rem;
+	min-width: 70rem;
+	position: relative;
+	background-size: 100% 100%;
+	z-index: 0;
+}
+
+section .title img{
+	margin-top:8.125rem;
+}
+
+section .dowload{
+	background: url(../img/PerIndex/DowloadTitle.png) center no-repeat;
+	text-align: center;
+}
+
+.dowload h1{
+	font-size: 1.5625rem;
+	font-weight: 43.75rem;
+	color: #FFFFFF;
+	padding: 0.7rem;
+}
+
+.dowload a{
+	font-size: 25px;
+	font-weight: 700;
+	color: #FFFFFF;
+	padding: 0.3rem 10.9rem;
+	background-color: #f6bf2d;
+}
+
+.dowload a:hover{
+	background-color: #ffcb57;
+}
+

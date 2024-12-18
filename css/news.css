@@ -1,0 +1,135 @@
+section{
+	margin: 5rem 0;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+section header{
+	background:url(../img/news/Title.png) no-repeat;
+	width: 12.875rem;
+	height: 5rem;
+}
+
+section .newsTab{
+	margin-top: 3rem;
+	width: 50rem;
+	border: none;
+}
+
+.newsTab li a{
+	display: block;
+	border-bottom:0.1875rem solid rgba(40,167,69,0);
+	transition: all 0.3s;
+}
+
+.newsTab li a:hover{
+	border-bottom:0.1875rem solid rgba(40,167,69,1);
+}
+
+.newsTab li .active{
+	border-bottom:0.1875rem solid rgba(40,167,69,1);
+}
+
+section a{
+	color: #000000;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	transition: all 0.3s;
+}
+
+section .tab-content{
+	border-top:0.075rem solid #e2e2e2;
+}
+
+section .tab-content a{
+	position: relative;
+	width: 54.375rem;
+	display: block;
+}
+section .tab-pane li{
+	padding:2rem 0;
+	transition: all 0.5s;
+	border-bottom: 0.03rem solid #f2e9ec;
+}
+
+section .tab-pane .ico{
+	position: absolute;
+	width: 4.5625rem;
+	height: 2rem;
+	background: #bfecef;
+	text-align: center;
+	line-height: 1.8rem;
+	border-radius:0.25rem;
+	font-weight: 400;
+	font-size: 1.25rem;
+	top:0;
+	transition: all 0.3s;
+}
+section .tab-pane li:hover .ico{
+	background: #ccecee;
+	color: #000000;
+}
+section .tab-pane .title{
+	padding-left: 6.25rem;
+	text-align: start;
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+
+section .tab-pane .con{
+	padding-left: 6.25rem;
+	font-size:1rem;
+	line-height: 1.25rem;
+	color: #7d7d7d;
+	text-align: start;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+section .tab-pane .ico-goto{
+	position: absolute;
+	background: url(../img/news/ico-goyo.png) no-repeat;
+	height: 1.5rem;
+	width: 0.75rem;
+	top:50%;
+	right: 0;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+section .tab-pane li:hover{
+	padding-right: 4rem;
+	background: #EEEEEE;
+}
+
+section .tab-pane li:hover .title{
+	color: royalblue;
+}
+
+
+section .tab-pane li:hover .ico-goto{
+	right: -4rem;
+	opacity: 1;
+}
+
+
+
+
+section .page{
+	display: flex;
+	width: 30rem;
+}
+section .page a{
+	border: 1px solid royalblue;
+	display: block;
+	padding: 0 1.2rem;
+	vertical-align: middle;
+}
+
+section .page a:hover{
+	color: #FFFFFF;
+	background: #5273d7;
+}
